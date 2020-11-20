@@ -18,8 +18,8 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Button layoutX="82.0" layoutY="161.0" mnemonicParsing="false" text="Ingresar" />
-      <Button layoutX="82.0" layoutY="218.0" mnemonicParsing="false" text="Registrarse" />
+      <Button layoutX="82.0" layoutY="161.0" mnemonicParsing="false" onAction="#ingresar" text="Ingresar" />
+      <Button layoutX="82.0" layoutY="218.0" mnemonicParsing="false" onAction="#registrarse" text="Registrarse" />
       <Button layoutX="460.0" layoutY="305.0" mnemonicParsing="false" text="Salir" />
    </children>
 </AnchorPane>
