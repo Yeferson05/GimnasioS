@@ -6,17 +6,24 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nuevo.Controllers.ingresarControlador">
    <children>
-      <Label layoutX="246.0" layoutY="49.0" text="Iniciar sesión  ">
+      <Label layoutX="214.0" layoutY="33.0" text="Iniciar sesión  ">
          <font>
-            <Font name="System Bold Italic" size="16.0" />
+            <Font name="System Bold Italic" size="24.0" />
          </font>
       </Label>
-      <Label layoutX="159.0" layoutY="97.0" text="Ingrese su numero de documento/correo electronico:" />
-      <Label fx:id="mensajeUsuario" layoutX="284.0" layoutY="174.0" prefHeight="17.0" prefWidth="32.0" text="Label" textFill="#e80a0a" wrapText="true" />
-      <TextField fx:id="usuario" layoutX="226.0" layoutY="137.0" />
-      <TextField fx:id="contraseña" layoutX="227.0" layoutY="239.0" />
-      <Label layoutX="243.0" layoutY="213.0" text="Ingrese la contraseña:" />
-      <Label fx:id="mensajeContraseña" layoutX="286.0" layoutY="275.0" text="Label" textFill="#e80909" />
-      <Button layoutX="259.0" layoutY="328.0" mnemonicParsing="false" onAction="#iniciar" text="Iniciar sesión" />
+      <Label layoutX="138.0" layoutY="90.0" text="Ingrese su numero de documento/correo electronico:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="mensajeUsuario" layoutX="182.0" layoutY="145.0" prefHeight="25.0" prefWidth="226.0" text="Label" textAlignment="JUSTIFY" textFill="#e80a0a" wrapText="true" />
+      <TextField fx:id="usuario" layoutX="182.0" layoutY="120.0" prefHeight="25.0" prefWidth="226.0" />
+      <TextField fx:id="contraseña" layoutX="221.0" layoutY="200.0" />
+      <Label layoutX="228.0" layoutY="170.0" text="Ingrese la contraseña:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="mensajeContraseña" layoutX="182.0" layoutY="225.0" prefHeight="25.0" prefWidth="226.0" text="Label" textAlignment="JUSTIFY" textFill="#e80909" />
+      <Button layoutX="258.0" layoutY="338.0" mnemonicParsing="false" onAction="#iniciarSesion" text="Iniciar sesión" />
+      <Label fx:id="mensajeGeneral" layoutX="182.0" layoutY="279.0" prefHeight="25.0" prefWidth="226.0" text="Label" textAlignment="CENTER" textFill="#f50000" />
    </children>
 </AnchorPane>

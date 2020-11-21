@@ -32,6 +32,8 @@ public class App extends Application {
     }
 
     public static void main(String[] args) {
+        Usuario nuevoUsuario = new Usuario(10298832, "Andres","Garcia","andres123@gmail.com","andres123");
+        Usuario.usuarios.add(nuevoUsuario);
         launch();
     }
 
