@@ -1,4 +1,4 @@
-package Nuevo;
+package Nuevo.Controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
