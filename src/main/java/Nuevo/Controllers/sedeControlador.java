@@ -6,9 +6,9 @@ import javafx.fxml.FXML;
 
 import java.io.IOException;
 
-public class administracionControlador {
+public class sedeControlador {
     @FXML
-    private void sedeA (ActionEvent event) throws IOException {
-        App.setRoot("sede");
+    private void verSedes (ActionEvent event) throws IOException {
+        App.setRoot("VerSede");
     }
 }
