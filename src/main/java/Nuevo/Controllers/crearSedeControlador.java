@@ -25,10 +25,10 @@ public class crearSedeControlador {
             mensajeSede.setText("ERROR: Existen campos vacios.");
             return;
         }
-        String nonbre = nombreSede.getText().trim();
-        String ciudad = nombreSede.getText().trim();
-        String direccion = nombreSede.getText().trim();
-        Sede nuevaSede = new Sede(nonbre, ciudad, direccion);
+        String nombre = nombreSede.getText().trim();
+        String ciudad = ciudadSede.getText().trim();
+        String direccion = direccionSede.getText().trim();
+        Sede nuevaSede = new Sede(nombre,ciudad,direccion);
         Sede.sedes.add(nuevaSede);
 
         Alert alert=new Alert(Alert.AlertType.INFORMATION);

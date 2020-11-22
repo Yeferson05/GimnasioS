@@ -23,6 +23,6 @@ public class VerSedeControlador implements Initializable {
     }
     @FXML
     private void volver (ActionEvent event) throws IOException {
-        App.setRoot("Sede");
+        App.setRoot("sede");
     }
 }
