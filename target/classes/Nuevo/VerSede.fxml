@@ -20,6 +20,6 @@
             <ListView fx:id="ListView" prefHeight="270.0" prefWidth="598.0" />
          </content>
       </ScrollPane>
-      <Button layoutX="479.0" layoutY="354.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Volver" />
+      <Button layoutX="479.0" layoutY="354.0" mnemonicParsing="false" onAction="#volver" prefHeight="25.0" prefWidth="84.0" text="Volver" />
    </children>
 </AnchorPane>

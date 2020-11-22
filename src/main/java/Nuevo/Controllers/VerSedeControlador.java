@@ -1,5 +1,7 @@
 package Nuevo.Controllers;
 
+import Nuevo.App;
+import Nuevo.Sede;
 import Nuevo.Usuario;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -15,8 +17,12 @@ public class VerSedeControlador implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        for (Usuario voto : Usuario.usuarios) {
-            ListView.getItems().add(voto);
+        for (Sede sede1 : Sede.sedes) {
+            ListView.getItems().add(sede1);
         }
+    }
+    @FXML
+    private void volver (ActionEvent event) throws IOException {
+        App.setRoot("Sede");
     }
 }

@@ -1,0 +1,53 @@
+package Nuevo.Controllers;
+
+import Nuevo.App;
+import Nuevo.Sede;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+
+import java.io.IOException;
+
+public class crearSedeControlador {
+    @FXML
+    public TextField nombreSede;
+    @FXML
+    public TextField ciudadSede;
+    @FXML
+    public TextField direccionSede;
+    @FXML
+    public Label mensajeSede;
+    public void enviar (ActionEvent event)throws IOException {
+        cleanWarnings();
+        if (nombreSede.getText().trim().equals("") || ciudadSede.getText().trim().equals("") || direccionSede.getText().trim().equals("") ) {
+            mensajeSede.setText("ERROR: Existen campos vacios.");
+            return;
+        }
+        String nonbre = nombreSede.getText().trim();
+        String ciudad = nombreSede.getText().trim();
+        String direccion = nombreSede.getText().trim();
+        Sede nuevaSede = new Sede(nonbre, ciudad, direccion);
+        Sede.sedes.add(nuevaSede);
+
+        Alert alert=new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Sede creada correctamente");
+        alert.setHeaderText(null);
+        alert.setContentText("La sede creada fue: " + nuevaSede);
+        alert.showAndWait();
+        clean();
+    }
+    public void volver (ActionEvent event)throws IOException {
+        App.setRoot("sede");
+    }
+    @FXML
+    public void clean(){
+        nombreSede.setText("");
+        ciudadSede.setText("");
+        direccionSede.setText("");
+    }
+    public void cleanWarnings(){
+        mensajeSede.setText("");
+    }
+}

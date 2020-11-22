@@ -15,7 +15,7 @@
       </Label>
       <Label layoutX="71.0" layoutY="87.0" text="Escoja una opcion:" />
       <Button layoutX="64.0" layoutY="117.0" mnemonicParsing="false" onAction="#verSedes" text="Ver sedes" AnchorPane.leftAnchor="64.0" />
-      <Button layoutX="61.0" layoutY="158.0" mnemonicParsing="false" text="Crear sede" AnchorPane.leftAnchor="64.0" />
+      <Button layoutX="61.0" layoutY="158.0" mnemonicParsing="false" onAction="#crearSede" text="Crear sede" AnchorPane.leftAnchor="64.0" />
       <Button layoutX="71.0" layoutY="207.0" mnemonicParsing="false" text="Editar sede" AnchorPane.leftAnchor="64.0" />
       <Button layoutX="71.0" layoutY="257.0" mnemonicParsing="false" text="Eliminar sede" AnchorPane.leftAnchor="64.0" />
       <Button layoutX="495.0" layoutY="346.0" mnemonicParsing="false" text="Cancelar" />
