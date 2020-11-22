@@ -15,15 +15,15 @@
          <font>
             <Font size="14.0" />
          </font></Label>
-      <Label fx:id="mensajeUsuario" layoutX="182.0" layoutY="145.0" prefHeight="25.0" prefWidth="226.0" text="Label" textAlignment="JUSTIFY" textFill="#e80a0a" wrapText="true" />
+      <Label fx:id="mensajeUsuario" alignment="CENTER" contentDisplay="CENTER" layoutX="111.0" layoutY="145.0" prefHeight="25.0" prefWidth="369.0" textAlignment="JUSTIFY" textFill="#e80a0a" wrapText="true" />
       <TextField fx:id="usuario" layoutX="182.0" layoutY="120.0" prefHeight="25.0" prefWidth="226.0" />
       <TextField fx:id="contraseña" layoutX="221.0" layoutY="200.0" />
       <Label layoutX="228.0" layoutY="170.0" text="Ingrese la contraseña:">
          <font>
             <Font size="14.0" />
          </font></Label>
-      <Label fx:id="mensajeContraseña" layoutX="182.0" layoutY="225.0" prefHeight="25.0" prefWidth="226.0" text="Label" textAlignment="JUSTIFY" textFill="#e80909" />
+      <Label fx:id="mensajeContraseña" alignment="CENTER" contentDisplay="CENTER" layoutX="182.0" layoutY="225.0" prefHeight="25.0" prefWidth="226.0" textAlignment="JUSTIFY" textFill="#e80909" />
       <Button layoutX="258.0" layoutY="338.0" mnemonicParsing="false" onAction="#iniciarSesion" text="Iniciar sesión" />
-      <Label fx:id="mensajeGeneral" layoutX="182.0" layoutY="279.0" prefHeight="25.0" prefWidth="226.0" text="Label" textAlignment="CENTER" textFill="#f50000" />
+      <Label fx:id="mensajeGeneral" alignment="CENTER" contentDisplay="CENTER" layoutX="182.0" layoutY="279.0" prefHeight="25.0" prefWidth="226.0" textAlignment="CENTER" textFill="#f50000" />
    </children>
 </AnchorPane>

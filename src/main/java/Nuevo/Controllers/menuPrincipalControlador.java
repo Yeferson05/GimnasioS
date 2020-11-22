@@ -9,7 +9,7 @@ import java.io.IOException;
 public class menuPrincipalControlador {
     @FXML
     private void adminis (ActionEvent event) throws IOException {
-        App.setRoot("");
+        App.setRoot("administracion");
     }
     @FXML
     private void registrarse (ActionEvent event) throws IOException {
