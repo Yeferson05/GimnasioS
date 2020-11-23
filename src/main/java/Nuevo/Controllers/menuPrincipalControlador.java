@@ -12,7 +12,7 @@ public class menuPrincipalControlador {
         App.setRoot("administracion");
     }
     @FXML
-    private void registrarse (ActionEvent event) throws IOException {
+    private void busqueda (ActionEvent event) throws IOException {
         App.setRoot("AgregarUsuario");
     }
 }
