@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nuevo.Controllers.menuPrincipalControlador">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nuevo.Controllers.menuPrincipalControlador">
    <children>
       <Label layoutX="184.0" layoutY="33.0" prefHeight="27.0" prefWidth="232.0" text="Menú principal (sin hacer)" AnchorPane.leftAnchor="184.0" AnchorPane.rightAnchor="184.0">
          <font>
@@ -17,7 +16,7 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <Button layoutX="416.0" layoutY="323.0" mnemonicParsing="false" text="Salir" />
+      <Button layoutX="416.0" layoutY="323.0" mnemonicParsing="false" onAction="#salir" text="Salir" />
       <Button layoutX="78.0" layoutY="118.0" mnemonicParsing="false" onAction="#adminis" text="Administración" AnchorPane.bottomAnchor="260.0" AnchorPane.leftAnchor="78.0" />
       <Button layoutX="78.0" layoutY="175.0" mnemonicParsing="false" onAction="#busqueda" text="Busqueda" AnchorPane.bottomAnchor="220.0" AnchorPane.leftAnchor="78.0" />
       <Button layoutX="82.0" layoutY="255.0" mnemonicParsing="false" text="Diagnostico de inconsistencias" AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="78.0" />

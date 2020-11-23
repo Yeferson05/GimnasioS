@@ -13,6 +13,10 @@ public class menuPrincipalControlador {
     }
     @FXML
     private void busqueda (ActionEvent event) throws IOException {
-        App.setRoot("AgregarUsuario");
+        App.setRoot("busqueda");
+    }
+
+    public void salir(ActionEvent actionEvent) throws IOException {
+        App.setRoot("ingresar");
     }
 }
