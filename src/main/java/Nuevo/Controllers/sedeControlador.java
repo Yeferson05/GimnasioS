@@ -19,4 +19,8 @@ public class sedeControlador {
     private void editarSede (ActionEvent event) throws IOException {
         App.setRoot("editarSede");
     }
+    @FXML
+    private void eliminarSedes (ActionEvent event) throws IOException {
+        App.setRoot("eliminarSede");
+    }
 }
