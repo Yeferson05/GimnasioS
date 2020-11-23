@@ -23,4 +23,8 @@ public class sedeControlador {
     private void eliminarSedes (ActionEvent event) throws IOException {
         App.setRoot("eliminarSede");
     }
+
+    public void volver(ActionEvent actionEvent) throws IOException {
+        App.setRoot("administracion");
+    }
 }
