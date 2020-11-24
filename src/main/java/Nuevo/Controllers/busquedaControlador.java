@@ -70,10 +70,11 @@ public class busquedaControlador implements Initializable {
         }
         atri = String.valueOf(atributo.getValue());
         String ing = ingresar.getText().trim();
+        String pase = ing.toLowerCase();
         if (atri.equals("Nombre")){
             int cont =0;
             for (Sede sede1 : Sede.sedes) {
-                if (sede1.nombre.equals(ing)) {
+                if (sede1.nombre.toLowerCase().equals(pase)) {
                     ListView.getItems().add(sede1);
                 }else{
                     cont++;
@@ -84,7 +85,7 @@ public class busquedaControlador implements Initializable {
         }else if (atri.equals("Direccion")){
             int cont =0;
             for (Sede sede1 : Sede.sedes) {
-                if (sede1.direccion.equals(ing)) {
+                if (sede1.direccion.toLowerCase().equals(pase)) {
                     ListView.getItems().add(sede1);
                 }else{
                     cont++;
@@ -95,7 +96,7 @@ public class busquedaControlador implements Initializable {
         }else if (atri.equals("Ciudad")){
             int cont =0;
             for (Sede sede1 : Sede.sedes) {
-                if (sede1.ciudad.equals(ing)) {
+                if (sede1.ciudad.toLowerCase().equals(pase)) {
                     ListView.getItems().add(sede1);
                 }else{
                     cont++;
@@ -118,7 +119,7 @@ public class busquedaControlador implements Initializable {
         }else if (atri.equals("Zona")){
             int cont =0;
             for (Zona zona1 : Zona.zonas) {
-                if (zona1.zona.equals(ing)) {
+                if (zona1.zona.toLowerCase().equals(pase)) {
                     ListView.getItems().add(zona1);
                 }else{
                     cont++;
