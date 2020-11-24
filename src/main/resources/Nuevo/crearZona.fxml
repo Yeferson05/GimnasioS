@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nuevo.Controllers.crearZonaControlador">
    <children>
       <Label layoutX="199.0" layoutY="30.0" text="Creación de zonas">
@@ -19,13 +18,13 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <TextField layoutX="300.0" layoutY="116.0" prefHeight="25.0" prefWidth="224.0" />
-      <Button layoutX="472.0" layoutY="200.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="57.0" text="Volver" />
-      <Label alignment="CENTER" layoutX="69.0" layoutY="152.0" prefHeight="25.0" prefWidth="462.0" textFill="RED">
+      <TextField fx:id="nombreZona" layoutX="300.0" layoutY="116.0" prefHeight="25.0" prefWidth="224.0" />
+      <Button layoutX="472.0" layoutY="200.0" mnemonicParsing="false" onAction="#volver" prefHeight="20.0" prefWidth="57.0" text="Volver" />
+      <Label fx:id="warningMessage" alignment="CENTER" layoutX="69.0" layoutY="152.0" prefHeight="25.0" prefWidth="462.0" textFill="RED">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Button layoutX="386.0" layoutY="200.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="57.0" text="Enviar" />
+      <Button layoutX="386.0" layoutY="200.0" mnemonicParsing="false" onAction="#enviar" prefHeight="25.0" prefWidth="57.0" text="Enviar" />
    </children>
 </AnchorPane>

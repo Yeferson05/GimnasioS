@@ -69,7 +69,7 @@ public class editarSedeControlador{
         Alert alert=new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Sede editada correctamente");
         alert.setHeaderText(null);
-        alert.setContentText("La sede creada fue: " + "Nombre: " + nuevoN + "\\"+
+        alert.setContentText("La sede editada fue: " + "Nombre: " + nuevoN + "\\"+
                 "Ciudad: "+ nuevoC + "\\"+
                 "Direccion: " + nuevoD);
         alert.showAndWait();

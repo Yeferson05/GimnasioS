@@ -17,9 +17,9 @@
          </font>
       </Label>
       <Button fx:id="verZonas" layoutX="247.0" layoutY="142.0" mnemonicParsing="false" onAction="#verZonas" prefHeight="35.0" prefWidth="106.0" text="Ver zonas" />
-      <Button layoutX="247.0" layoutY="193.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="106.0" text="Crear zonas" />
-      <Button layoutX="248.0" layoutY="243.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="106.0" text="Editar zonas" />
-      <Button layoutX="248.0" layoutY="292.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="106.0" text="Eliminar zonas" />
+      <Button layoutX="247.0" layoutY="193.0" mnemonicParsing="false" onAction="#crearZonas" prefHeight="35.0" prefWidth="106.0" text="Crear zonas" />
+      <Button layoutX="248.0" layoutY="243.0" mnemonicParsing="false" onAction="#editarZona" prefHeight="35.0" prefWidth="106.0" text="Editar zonas" />
+      <Button layoutX="248.0" layoutY="292.0" mnemonicParsing="false" onAction="#eliminarZona" prefHeight="35.0" prefWidth="106.0" text="Eliminar zonas" />
       <Button layoutX="509.0" layoutY="334.0" mnemonicParsing="false" onAction="#volver" text="Volver" />
    </children>
 </AnchorPane>

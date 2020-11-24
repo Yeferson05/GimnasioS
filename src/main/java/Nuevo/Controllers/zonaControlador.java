@@ -16,6 +16,14 @@ public class zonaControlador {
         App.setRoot("crearZona");
     }
     @FXML
+    private void editarZona(ActionEvent event) throws IOException{
+        App.setRoot("editarZona");
+    }
+    @FXML
+    private void eliminarZona(ActionEvent event) throws IOException{
+        App.setRoot("eliminarZona");
+    }
+    @FXML
     private void volver (ActionEvent event) throws IOException {
         App.setRoot("administracion");
     }
