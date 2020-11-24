@@ -3,6 +3,7 @@ package Nuevo.Controllers;
 
 import Nuevo.App;
 import Nuevo.Sede;
+import Nuevo.Zona;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -79,6 +80,51 @@ public class busquedaControlador implements Initializable {
                 }
             }if (cont==0){
                 mensajeG.setText("No se encuentra la sede");
+            }
+        }else if (atri.equals("Direccion")){
+            int cont =0;
+            for (Sede sede1 : Sede.sedes) {
+                if (sede1.direccion.equals(ing)) {
+                    ListView.getItems().add(sede1);
+                }else{
+                    cont++;
+                }
+            }if (cont==0){
+                mensajeG.setText("No se encuentra la sede");
+            }
+        }else if (atri.equals("Ciudad")){
+            int cont =0;
+            for (Sede sede1 : Sede.sedes) {
+                if (sede1.ciudad.equals(ing)) {
+                    ListView.getItems().add(sede1);
+                }else{
+                    cont++;
+                }
+            }if (cont==0){
+                mensajeG.setText("No se encuentra la sede");
+            }
+        }else if (atri.equals("Id")){
+            int nu = Integer.parseInt(ing);
+            int cont =0;
+            for (Zona zona1 : Zona.zonas) {
+                if (zona1.id == nu) {
+                    ListView.getItems().add(zona1);
+                }else{
+                    cont++;
+                }
+            }if (cont==0){
+                mensajeG.setText("No se encuentra la zona");
+            }
+        }else if (atri.equals("Zona")){
+            int cont =0;
+            for (Zona zona1 : Zona.zonas) {
+                if (zona1.zona.equals(ing)) {
+                    ListView.getItems().add(zona1);
+                }else{
+                    cont++;
+                }
+            }if (cont==0){
+                mensajeG.setText("No se encuentra la zona");
             }
         }
     }
