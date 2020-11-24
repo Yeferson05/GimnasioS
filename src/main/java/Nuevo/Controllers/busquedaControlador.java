@@ -1,17 +1,32 @@
 package Nuevo.Controllers;
 
-import Nuevo.App;
-import javafx.event.ActionEvent;
-import javafx.scene.control.ListView;
 
-import java.io.IOException;
+import javafx.collections.FXCollections;
+import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
+import javafx.scene.control.ChoiceBox;
 
-public class busquedaControlador {
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.ResourceBundle;
 
+public class busquedaControlador implements Initializable {
+    @FXML
+    public ChoiceBox entidad;
+    @FXML
+    public ChoiceBox atributo;
 
-    public javafx.scene.control.ListView ListView;
-
-    public void volver(ActionEvent actionEvent) throws IOException {
-        App.setRoot("menuPrincipal");
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        ArrayList<String> op = new ArrayList<>();
+        op.add("Sede");
+        op.add("Zona");
+        op.add("Curso");
+        entidad.setItems(FXCollections.observableList(op));
+        ArrayList<String> atr = new ArrayList<>();
+        atr.add("Nombre");
+        atr.add("Direccion");
+        atr.add("Ciudad");
+        atributo.setItems(FXCollections.observableList(atr));
     }
 }

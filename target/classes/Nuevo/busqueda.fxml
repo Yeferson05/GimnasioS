@@ -3,19 +3,23 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<<<<<<< Updated upstream
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nuevo.Controllers.busquedaControlador">
+=======
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nuevo.Controllers.busquedaControlador">
+>>>>>>> Stashed changes
    <children>
       <Label layoutX="99.0" layoutY="36.0" text="Seleccione la entidad a buscar" AnchorPane.rightAnchor="334.0" />
       <Label layoutX="98.0" layoutY="89.0" text="Seleccione el atributo a buscar" AnchorPane.rightAnchor="334.0" />
       <Label layoutX="185.0" layoutY="128.0" text="Ingrese el valor" AnchorPane.rightAnchor="334.0" />
       <Label layoutX="27.0" layoutY="228.0" text="Resultados:" />
       <TextField layoutX="339.0" layoutY="124.0" AnchorPane.rightAnchor="112.0" />
-      <ChoiceBox layoutX="338.0" layoutY="32.0" prefWidth="150.0" AnchorPane.rightAnchor="112.0" />
+      <ChoiceBox fx:id="entidad" layoutX="338.0" layoutY="32.0" nodeOrientation="LEFT_TO_RIGHT" prefWidth="150.0" AnchorPane.rightAnchor="112.0" />
       <Button layoutX="339.0" layoutY="169.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Buscar" />
-      <ChoiceBox layoutX="338.0" layoutY="85.0" prefWidth="150.0" AnchorPane.rightAnchor="112.0" />
+      <ChoiceBox fx:id="atributo" layoutX="338.0" layoutY="85.0" nodeOrientation="LEFT_TO_RIGHT" prefWidth="150.0" AnchorPane.rightAnchor="112.0" />
       <ScrollPane layoutX="3.0" layoutY="257.0" prefHeight="142.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <content>
-            <ListView fx:id="ListView" prefHeight="140.0" prefWidth="598.0" />
+            <ListView prefHeight="140.0" prefWidth="598.0" />
          </content>
       </ScrollPane>
       <Label alignment="CENTER" layoutX="224.0" layoutY="211.0" prefHeight="17.0" prefWidth="162.0" text="Label" textFill="#e80909" />
