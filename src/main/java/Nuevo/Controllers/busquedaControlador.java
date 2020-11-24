@@ -40,8 +40,6 @@ public class busquedaControlador implements Initializable {
     @FXML
     public void validar (ActionEvent event)throws IOException {
         String enti="";
-        //  String.valueOf(atributo.getValue()).equals("null")||
-        // || ingresar.getText().trim().equals("")
         if (String.valueOf(entidad.getValue()).equals("null") ) {
             mensajeG.setText("ERROR: Seleccione una entidad");
             return;
