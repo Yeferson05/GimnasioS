@@ -34,6 +34,10 @@ public class App extends Application {
     public static void main(String[] args) {
         Usuario nuevoUsuario = new Usuario(123, "Andres","Garcia","andres123@gmail.com","andres123");
         Usuario.usuarios.add(nuevoUsuario);
+        /*Zona nuevaZona = new Zona(1,"Pesas");
+        Zona.zonas.add(nuevaZona);
+        Zona nuevaZona2 = new Zona (2,"Cardio");
+        Zona.zonas.add(nuevaZona2);*/
         launch();
     }
 

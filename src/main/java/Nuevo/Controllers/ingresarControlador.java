@@ -45,7 +45,6 @@ public class ingresarControlador {
                         saludoIngreso.saludo.add(ingreso1);
                         String Contraseña = contraseña.getText().trim();
                         if (Usuario.usuarios.get(i).password.equals(Contraseña)) {
-                            //Mandar al menú principal
                             App.setRoot("menuPrincipal");
                         } else {
                             mensajeContraseña.setText("Contraseña incorrecta.");

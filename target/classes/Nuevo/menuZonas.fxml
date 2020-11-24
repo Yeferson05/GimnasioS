@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nuevo.Controllers.zonaControlador">
+   <children>
+      <Label layoutX="232.0" layoutY="39.0" text="Menú Zonas">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="243.0" layoutY="93.0" text="Escoja una opción:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="verZonas" layoutX="247.0" layoutY="142.0" mnemonicParsing="false" onAction="#verZonas" prefHeight="35.0" prefWidth="106.0" text="Ver zonas" />
+      <Button layoutX="247.0" layoutY="193.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="106.0" text="Crear zonas" />
+      <Button layoutX="248.0" layoutY="243.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="106.0" text="Editar zonas" />
+      <Button layoutX="248.0" layoutY="292.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="106.0" text="Eliminar zonas" />
+      <Button layoutX="509.0" layoutY="334.0" mnemonicParsing="false" onAction="#volver" text="Volver" />
+   </children>
+</AnchorPane>

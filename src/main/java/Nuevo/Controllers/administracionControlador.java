@@ -11,8 +11,13 @@ public class administracionControlador {
     private void sedeA (ActionEvent event) throws IOException {
         App.setRoot("sede");
     }
-
+    @FXML
     public void volver(ActionEvent actionEvent) throws IOException {
         App.setRoot("menuPrincipal");
     }
+    @FXML
+    private void zonas (ActionEvent event) throws IOException{
+        App.setRoot(("menuZonas"));
+    }
 }
+
