@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nuevo.Controllers.crearCursoControlador">
+   <children>
+      <Label layoutX="239.0" layoutY="60.0" prefHeight="21.0" prefWidth="122.0" text="creacion de curso">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Label>
+      <Button layoutX="475.0" layoutY="332.0" mnemonicParsing="false" onAction="#volver" text="Volver" />
+      <Button layoutX="388.0" layoutY="332.0" mnemonicParsing="false" onAction="#enviar" text="Enviar" />
+      <Label layoutX="118.0" layoutY="114.0" prefHeight="17.0" prefWidth="183.0" text="Ingrese el nombre del curso:" />
+      <Label layoutX="118.0" layoutY="183.0" prefHeight="17.0" prefWidth="183.0" text="Ingrese la intensidad del curso:" />
+      <TextField fx:id="nombreCurso" layoutX="326.0" layoutY="110.0" />
+      <TextField fx:id="intensidadCurso" layoutX="326.0" layoutY="179.0" />
+      <Label fx:id="mensajeCurso" layoutX="239.0" layoutY="266.0" prefHeight="17.0" prefWidth="113.0" textFill="RED" />
+   </children>
+</AnchorPane>

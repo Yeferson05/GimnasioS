@@ -19,5 +19,9 @@ public class administracionControlador {
     private void zonas (ActionEvent event) throws IOException{
         App.setRoot(("menuZonas"));
     }
+
+    public void cursos(ActionEvent actionEvent) throws IOException {
+        App.setRoot(("curso"));
+    }
 }
 

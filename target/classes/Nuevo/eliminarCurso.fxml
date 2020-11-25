@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nuevo.Controllers.eliminarCursoControlador">
+   <children>
+      <Label layoutX="243.0" layoutY="31.0" prefHeight="25.0" prefWidth="112.0" text="Eliminar curso">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font></Label>
+      <Label layoutX="69.0" layoutY="80.0" prefHeight="17.0" prefWidth="162.0" text="ingrese el codigo del curso:" />
+      <TextField fx:id="eliminar" layoutX="250.0" layoutY="76.0" />
+      <Button layoutX="276.0" layoutY="129.0" mnemonicParsing="false" onAction="#enviarE" text="Enviar" />
+      <ScrollPane layoutX="4.0" layoutY="164.0" prefHeight="45.0" prefWidth="592.0">
+         <content>
+            <ListView fx:id="ListView" prefHeight="45.0" prefWidth="576.0" />
+         </content>
+      </ScrollPane>
+      <Button layoutX="205.0" layoutY="314.0" mnemonicParsing="false" onAction="#confirmarE" text="Confimar" />
+      <Button layoutX="344.0" layoutY="314.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+      <Label layoutX="187.0" layoutY="243.0" prefHeight="17.0" prefWidth="225.0" text="¿Está seguro que desea eliminar el curso?" />
+      <Label fx:id="mensajeEliminar" layoutX="406.0" layoutY="80.0" prefHeight="17.0" prefWidth="184.0" textFill="RED" />
+   </children>
+</AnchorPane>
