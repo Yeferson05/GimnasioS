@@ -48,7 +48,7 @@ public class editarZonaControlador {
                 ListView.getItems().add(zona);
             }
         }
-        if (check == false){
+        if (!check){
             warningMessage1.setText("ERROR: No existen zonas con esta ID.");
         }
     }

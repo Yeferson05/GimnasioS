@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="Nuevo.Controllers.editarCursoControlador"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nuevo.Controllers.editarCursoControlador">
+   <children>
+      <Label layoutX="253.0" layoutY="14.0" text="Editar curso">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font></Label>
+      <Button layoutX="262.0" layoutY="104.0" mnemonicParsing="false" onAction="#enviar" text="Enviar" />
+      <Button layoutX="225.0" layoutY="344.0" mnemonicParsing="false" onAction="#volver" prefHeight="25.0" prefWidth="57.0" text="Volver" />
+      <Label layoutX="42.0" layoutY="56.0" prefHeight="17.0" prefWidth="149.0" text="Ingrese el codigo del curso:" />
+      <TextField fx:id="codigoCurso" layoutX="211.0" layoutY="52.0" />
+      <Label fx:id="mensaje" layoutX="368.0" layoutY="56.0" prefHeight="17.0" prefWidth="204.0" textFill="RED" />
+       <ScrollPane layoutX="1.0" layoutY="154.0" prefHeight="58.0" prefWidth="600.0">
+           <ListView fx:id="ListView" prefHeight="55.0" prefWidth="597.0" />
+       </ScrollPane>
+      <Label layoutX="42.0" layoutY="235.0" prefHeight="17.0" prefWidth="83.0" text="Nuevo nombre:" />
+      <Label layoutX="42.0" layoutY="283.0" prefHeight="17.0" prefWidth="95.0" text="Nueva intensida:" />
+      <TextField fx:id="nuevoNombre" layoutX="158.0" layoutY="231.0" />
+      <TextField fx:id="nuevaIntensidad" layoutX="158.0" layoutY="279.0" />
+      <Label fx:id="nuevoMensaje" layoutX="337.0" layoutY="336.0" prefHeight="17.0" prefWidth="204.0" textFill="RED" />
+      <Button layoutX="123.0" layoutY="344.0" mnemonicParsing="false" onAction="#confirmar" text="Confirmar" />
+      <Label layoutX="326.0" layoutY="235.0" prefHeight="17.0" prefWidth="83.0" text="Nuevo codigo:" />
+      <TextField fx:id="nuevoCodigo" layoutX="409.0" layoutY="231.0" />
+      <Label fx:id="MensajeCodigo" layoutX="348.0" layoutY="271.0" prefHeight="17.0" prefWidth="204.0" textFill="RED" />
+   </children>
 </AnchorPane>
