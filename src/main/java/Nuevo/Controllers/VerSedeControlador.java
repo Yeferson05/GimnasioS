@@ -17,10 +17,11 @@ public class VerSedeControlador implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        for (Sede sede1 : Sede.sedes) {
+        for (Sede sede1 : Sede.tabla.values()) {
             ListView.getItems().add(sede1);
         }
     }
+
     @FXML
     private void volver (ActionEvent event) throws IOException {
         App.setRoot("sede");

@@ -10,6 +10,7 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 
 import java.io.IOException;
+import java.util.Enumeration;
 
 public class eliminarSedeControlador {
     @FXML
@@ -26,13 +27,12 @@ public class eliminarSedeControlador {
         }
         String direc = eliminar.getText().trim();
         int cont = 0;
-        for (Sede sede1 : Sede.sedes) {
+        for (Sede sede1 : Sede.tabla.values()) {
             if (sede1.direccion.equals(direc)){
                 ListView.getItems().add(sede1);
                 return;
             }else{
                 cont++;
-                mensajeEliminar.setText("No se encontro ninguna sede");
             }
         }
         if (cont==0){
@@ -41,9 +41,14 @@ public class eliminarSedeControlador {
     }
     public void confirmarE (ActionEvent event)throws IOException {
         String direc = eliminar.getText().trim();
-        for (Sede sede1 : Sede.sedes) {
+        /*Enumeration<Integer> t = Sede.tabla.keys();
+        if (Sede.tabla.containsKey(direc)){
+        }*/
+        for (Sede sede1 : Sede.tabla.values()) {
             if (sede1.direccion.equals(direc)) {
-                Sede.sedes.remove(sede1);
+               // Enumeration<Integer> e = sede1.tabla.keys();
+                Sede.tabla.remove(sede1);
+                //Sede.sedes.remove(sede1);
                 return;
             }
         }

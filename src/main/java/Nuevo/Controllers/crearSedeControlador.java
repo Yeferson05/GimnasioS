@@ -9,8 +9,12 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 import java.io.IOException;
+import java.util.Hashtable;
 
 public class crearSedeControlador {
+    //public static Hashtable<Integer,Sede> tabla = new Hashtable<>();
+    @FXML
+    public static int con = 1;
     @FXML
     public TextField nombreSede;
     @FXML
@@ -29,7 +33,9 @@ public class crearSedeControlador {
         String ciudad = ciudadSede.getText().trim();
         String direccion = direccionSede.getText().trim();
         Sede nuevaSede = new Sede(nombre,ciudad,direccion);
-        Sede.sedes.add(nuevaSede);
+        Sede.tabla.put(con,new Sede(nombre,ciudad,direccion));
+        con++;
+        //Sede.sedes.add(nuevaSede);
 
         Alert alert=new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Sede creada correctamente");

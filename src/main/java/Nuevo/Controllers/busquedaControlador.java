@@ -71,7 +71,7 @@ public class busquedaControlador implements Initializable {
         String pase = ing.toLowerCase();
         if (atri.equals("Nombre")){
             int cont =0;
-            for (Sede sede1 : Sede.sedes) {
+            for (Sede sede1 : Sede.tabla.values()) {
                 if (sede1.nombre.toLowerCase().equals(pase)) {
                     ListView.getItems().add(sede1);
                 }else{
@@ -82,7 +82,7 @@ public class busquedaControlador implements Initializable {
             }
         }else if (atri.equals("Direccion")){
             int cont =0;
-            for (Sede sede1 : Sede.sedes) {
+            for (Sede sede1 : Sede.tabla.values()) {
                 if (sede1.direccion.toLowerCase().equals(pase)) {
                     ListView.getItems().add(sede1);
                 }else{
@@ -93,7 +93,7 @@ public class busquedaControlador implements Initializable {
             }
         }else if (atri.equals("Ciudad")){
             int cont =0;
-            for (Sede sede1 : Sede.sedes) {
+            for (Sede sede1 : Sede.tabla.values()) {
                 if (sede1.ciudad.toLowerCase().equals(pase)) {
                     ListView.getItems().add(sede1);
                 }else{

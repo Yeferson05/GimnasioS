@@ -1,10 +1,12 @@
 package Nuevo;
 
 import java.util.ArrayList;
+import java.util.Hashtable;
 
 public class Sede {
 
-    public static ArrayList<Sede> sedes = new ArrayList<>();
+    //public static ArrayList<Sede> sedes = new ArrayList<>();
+    public static Hashtable<Integer,Sede> tabla = new Hashtable<>();
 
     public String nombre;
     public String direccion;

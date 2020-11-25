@@ -38,12 +38,16 @@ public class editarSedeControlador{
             return;
         }
         String direc = direccionSede.getText().trim();
-        for (Sede sede1 : Sede.sedes) {
+        int e =0;
+        for (Sede sede1 : Sede.tabla.values()) {
             if (sede1.direccion.equals(direc)){
                 ListView.getItems().add(sede1);
             }else{
-                mensaje.setText("No se encontro ninguna sede");
+                e++;
             }
+        }
+        if (e==0){
+            mensaje.setText("No se encontro ninguna sede");
         }
         //clean();
     }
@@ -58,7 +62,7 @@ public class editarSedeControlador{
         String nuevoC = nuevaCiudad.getText().trim();
         String nuevoD = nuevaDireccion.getText().trim();
 
-        for (Sede sede1 : Sede.sedes) {
+        for (Sede sede1 : Sede.tabla.values()) {
             if (sede1.direccion.equals(direc)) {
                 sede1.nombre = nuevoN;
                 sede1.direccion = nuevoD;
