@@ -14,8 +14,6 @@ import java.util.Hashtable;
 public class crearSedeControlador {
     //public static Hashtable<Integer,Sede> tabla = new Hashtable<>();
     @FXML
-    public static int con = 1;
-    @FXML
     public TextField nombreSede;
     @FXML
     public TextField ciudadSede;
@@ -33,8 +31,7 @@ public class crearSedeControlador {
         String ciudad = ciudadSede.getText().trim();
         String direccion = direccionSede.getText().trim();
         Sede nuevaSede = new Sede(nombre,ciudad,direccion);
-        Sede.tabla.put(con,nuevaSede);
-        con++;
+        Sede.tabla.put(nombre,nuevaSede);
         //Sede.sedes.add(nuevaSede);
 
         Alert alert=new Alert(Alert.AlertType.INFORMATION);

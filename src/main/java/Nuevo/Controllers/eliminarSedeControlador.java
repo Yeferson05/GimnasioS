@@ -20,37 +20,44 @@ public class eliminarSedeControlador {
     @FXML
     public Label mensajeEliminar;
     public void enviarE (ActionEvent event)throws IOException {
-        cleanWarnings();
         if (eliminar.getText().trim().equals("")) {
             mensajeEliminar.setText("ERROR: Existen campos vacios.");
             return;
         }
         String direc = eliminar.getText().trim();
-        int cont = 0;
+        int cont = 0 , e =0;
+        if (Sede.tabla.size()==0){
+            mensajeEliminar.setText("No hay datos que mostrar");
+            return;
+        }
         for (Sede sede1 : Sede.tabla.values()) {
             if (sede1.direccion.equals(direc)){
                 ListView.getItems().add(sede1);
+                cont++;
                 return;
             }else{
-                cont++;
+                e++;
             }
         }
-        if (cont==0){
+        if ((cont==0) && (e !=0)){
             mensajeEliminar.setText("No se encontro ninguna sede");
         }
     }
     public void confirmarE (ActionEvent event)throws IOException {
         String direc = eliminar.getText().trim();
-        /*Enumeration<Integer> t = Sede.tabla.keys();
-        if (Sede.tabla.containsKey(direc)){
-        }*/
+        int cont = 0 , e =0;
+        if (eliminar.getText().trim().equals("")) {
+            mensajeEliminar.setText("ERROR: Existen campos vacios.");
+            return;
+        }
         for (Sede sede1 : Sede.tabla.values()) {
             if (sede1.direccion.equals(direc)) {
-                //Enumeration<Integer> e = sede1.tabla.keys();
-               // Sede.tabla.remove(Sede.tabla.keySet(), sede1);
-                //Sede.tabla.remove();
+                String nom = sede1.nombre;
+                Sede.tabla.remove(nom,sede1);
                 return;
+
             }
+
         }
         App.setRoot("sede");
         Alert alert=new Alert(Alert.AlertType.INFORMATION);
@@ -58,7 +65,6 @@ public class eliminarSedeControlador {
         alert.setHeaderText(null);
         alert.setContentText("Sede eliminada");
         alert.showAndWait();
-        clean();
     }
     @FXML
     private void cancelar (ActionEvent event) throws IOException {
