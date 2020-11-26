@@ -33,7 +33,7 @@ public class crearSedeControlador {
         String ciudad = ciudadSede.getText().trim();
         String direccion = direccionSede.getText().trim();
         Sede nuevaSede = new Sede(nombre,ciudad,direccion);
-        Sede.tabla.put(con,new Sede(nombre,ciudad,direccion));
+        Sede.tabla.put(con,nuevaSede);
         con++;
         //Sede.sedes.add(nuevaSede);
 

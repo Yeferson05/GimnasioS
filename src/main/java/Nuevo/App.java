@@ -5,6 +5,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.jgrapht.Graph;
+import org.jgrapht.graph.DefaultEdge;
+import org.jgrapht.graph.SimpleGraph;
 
 import java.io.IOException;
 
@@ -12,7 +15,7 @@ import java.io.IOException;
  * JavaFX App
  */
 public class App extends Application {
-
+    public static Graph<Object, DefaultEdge> grafo = new SimpleGraph<>(DefaultEdge.class);
     private static Scene scene;
 
     @Override
@@ -20,6 +23,9 @@ public class App extends Application {
         scene = new Scene(loadFXML("ingresar"), 600, 400);
         stage.setScene(scene);
         stage.show();
+        /*Object nuevaSede = new Sede ("maria", "medellin", "");
+        Sede Coversion = (Sede) (nuevaSede);
+        String nombre = Coversion.nombre;*/
     }
 
     public static void setRoot(String fxml) throws IOException {

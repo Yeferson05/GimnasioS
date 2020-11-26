@@ -46,9 +46,9 @@ public class eliminarSedeControlador {
         }*/
         for (Sede sede1 : Sede.tabla.values()) {
             if (sede1.direccion.equals(direc)) {
-               // Enumeration<Integer> e = sede1.tabla.keys();
-                Sede.tabla.remove(sede1);
-                //Sede.sedes.remove(sede1);
+                //Enumeration<Integer> e = sede1.tabla.keys();
+               // Sede.tabla.remove(Sede.tabla.keySet(), sede1);
+                //Sede.tabla.remove();
                 return;
             }
         }

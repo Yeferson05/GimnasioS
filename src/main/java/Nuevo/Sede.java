@@ -1,4 +1,7 @@
 package Nuevo;
+import org.jgrapht.Graph;
+import org.jgrapht.graph.DefaultEdge;
+import org.jgrapht.graph.SimpleGraph;
 
 import java.util.ArrayList;
 import java.util.Hashtable;
@@ -8,6 +11,8 @@ public class Sede {
     //public static ArrayList<Sede> sedes = new ArrayList<>();
     public static Hashtable<Integer,Sede> tabla = new Hashtable<>();
 
+
+
     public String nombre;
     public String direccion;
     public String ciudad;
@@ -16,6 +21,8 @@ public class Sede {
         this.nombre = nombre;
         this.direccion = direccion;
         this.ciudad = ciudad;
+        App.grafo.addVertex(this);
+        //App.grafo.addEdge()
     }
     @Override
     public String toString() {
@@ -25,4 +32,8 @@ public class Sede {
                 ", ciudad='" + ciudad + '\'' +
                 '}';
     }
+    public void  crearConexion (Object destino){
+        App.grafo.addEdge(this, destino);
+    }
 }
+
