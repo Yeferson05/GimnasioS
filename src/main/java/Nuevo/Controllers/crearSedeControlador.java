@@ -32,7 +32,6 @@ public class crearSedeControlador {
         String direccion = direccionSede.getText().trim();
         Sede nuevaSede = new Sede(nombre,ciudad,direccion);
         Sede.tabla.put(nombre,nuevaSede);
-        //Sede.sedes.add(nuevaSede);
 
         Alert alert=new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Sede creada correctamente");

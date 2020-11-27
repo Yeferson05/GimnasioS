@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Hashtable;
 
 public class Sede {
-    
+
     public static Hashtable<String,Sede> tabla = new Hashtable<>();
 
 
@@ -34,5 +34,6 @@ public class Sede {
     public void  crearConexion (Object destino){
         App.grafo.addEdge(this, destino);
     }
+    
 }
 

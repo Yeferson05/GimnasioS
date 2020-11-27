@@ -24,8 +24,8 @@ public class crearZonaControlador {
             return;
         }
         String nombre = nombreZona.getText();
-        Nuevo.Zona nuevaZona = new Nuevo.Zona(idZona,nombre);
-        Zona.zonas.add(nuevaZona);
+        Zona nuevaZona = new Nuevo.Zona(idZona,nombre);
+        Zona.zon.put(idZona,nuevaZona);
         idZona++;
         Alert alert=new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("Creación de zonas");

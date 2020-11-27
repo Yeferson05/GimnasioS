@@ -33,7 +33,7 @@ public class eliminarZonaControl {
             return;
         }
         boolean check = false;
-        for (Zona zona : Zona.zonas){
+        for (Zona zona : Zona.zon.values()){
             if (zona.id == ID){
                 check=true;
                 ListView.getItems().add(zona);
@@ -54,9 +54,10 @@ public class eliminarZonaControl {
         }catch (Exception e){
             return;
         }
-        for (Zona zona : Zona.zonas) {
+        for (Zona zona : Zona.zon.values()) {
             if (zona.id == ID) {
-                Zona.zonas.remove(zona);
+                int n = zona.id;
+                Zona.zon.remove(n,zona);
                 return;
             }
         }

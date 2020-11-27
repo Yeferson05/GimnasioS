@@ -57,7 +57,6 @@ public class eliminarSedeControlador {
                 return;
 
             }
-
         }
         App.setRoot("sede");
         Alert alert=new Alert(Alert.AlertType.INFORMATION);

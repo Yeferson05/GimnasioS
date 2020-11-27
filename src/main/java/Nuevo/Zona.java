@@ -4,8 +4,7 @@ import java.util.ArrayList;
 import java.util.Hashtable;
 
 public class Zona {
-    public static ArrayList<Zona> zonas = new ArrayList<>();
-    //public static Hashtable<Integer,String> zonas = new Hashtable<>();
+    public static Hashtable<Integer,Zona> zon = new Hashtable<>();
     public int id;
     public String zona;
 
@@ -13,6 +12,7 @@ public class Zona {
 
         this.id=id;
         this.zona=zona;
+        App.grafo.addVertex(this);
 
     }
 
@@ -22,5 +22,8 @@ public class Zona {
                 "id=" + id +
                 ", zona='" + zona + '\'' +
                 '}';
+    }
+    public void  crearConexion (Object destino){
+        App.grafo.addEdge(this, destino);
     }
 }

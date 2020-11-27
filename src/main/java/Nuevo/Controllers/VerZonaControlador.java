@@ -18,14 +18,14 @@ public class VerZonaControlador implements Initializable {
 
 
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        if (Zona.zonas.size() == 0) {
+        if (Zona.zon.size() == 0) {
             Alert alerta = new Alert(Alert.AlertType.INFORMATION);
             alerta.setTitle("Lista de zonas");
             alerta.setHeaderText(null);
             alerta.setContentText("La lista de zonas se encuentra vacía.");
             alerta.showAndWait();
         }else{
-            for (Zona zona : Zona.zonas) {
+            for (Zona zona : Zona.zon.values()) {
                 ListView.getItems().add(zona);
             }
         }
