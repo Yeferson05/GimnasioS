@@ -131,7 +131,7 @@ public class busquedaControlador implements Initializable {
             }
         }else if (atri.equals("Nombre curso")) {
             int cont = 0;
-            for (Curso curso1 : Curso.cursos) {
+            for (Curso curso1 : Curso.cursos.values()) {
                 if (curso1.nombre.toLowerCase().equals(pase)) {
                     ListView.getItems().add(curso1);
                     cont++;
@@ -142,7 +142,7 @@ public class busquedaControlador implements Initializable {
             }
         }else if (atri.equals("Intensidad")) {
             int cont = 0;
-            for (Curso curso1 : Curso.cursos) {
+            for (Curso curso1 : Curso.cursos.values()) {
                 if (curso1.intesidadHora.toLowerCase().equals(pase)) {
                     ListView.getItems().add(curso1);
                     cont++;
@@ -154,7 +154,7 @@ public class busquedaControlador implements Initializable {
         }else if (atri.equals("Codigo")) {
             int cont = 0;
             int intpase=Integer.parseInt(pase);
-            for (Curso curso1 : Curso.cursos) {
+            for (Curso curso1 : Curso.cursos.values()) {
                 if (curso1.codigo==(intpase)) {
                     ListView.getItems().add(curso1);
                     cont++;

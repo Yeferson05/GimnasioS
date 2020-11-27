@@ -27,7 +27,7 @@ public class editarCursoControlador {
         String direc = codigoCurso.getText().trim();
         int codi=Integer.parseInt(direc);
         int e =0;
-        for (Curso curso1 : Curso.cursos) {
+        for (Curso curso1 : Curso.cursos.values()) {
             if (curso1.codigo==(codi)){
                 ListView.getItems().add(curso1);
                 return;
@@ -55,7 +55,7 @@ public class editarCursoControlador {
         int nuevoCodigo=Integer.parseInt(nuevoC);
         boolean encontrado=false;
 
-        for (Curso curso1 : Curso.cursos) {
+        for (Curso curso1 : Curso.cursos.values()) {
             if (curso1.codigo==(codi)) {
                 curso1.nombre = nuevoN;
                 curso1.intesidadHora = nuevoI;

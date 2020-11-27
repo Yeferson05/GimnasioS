@@ -1,10 +1,11 @@
 package Nuevo;
 
-import java.util.ArrayList;
+
+import java.util.Hashtable;
 
 public class Curso {
 
-    public static ArrayList<Curso> cursos = new ArrayList<>();
+    public static Hashtable<Integer,Curso> cursos = new Hashtable<>();
 
     public String nombre;
     public int codigo;

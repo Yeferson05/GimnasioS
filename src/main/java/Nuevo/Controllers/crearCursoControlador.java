@@ -26,7 +26,8 @@ public class crearCursoControlador {
         String nombre = nombreCurso.getText().trim();
         String intensidad = intensidadCurso.getText().trim();
         Curso nuevoCurso = new Curso(nombre,codigo,intensidad);
-        Curso.cursos.add(nuevoCurso);
+        Curso.cursos.put(codigo,nuevoCurso);
+
         codigo++;
 
         Alert alert=new Alert(Alert.AlertType.INFORMATION);

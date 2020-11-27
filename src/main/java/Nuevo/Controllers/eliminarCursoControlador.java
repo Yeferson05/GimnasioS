@@ -24,7 +24,7 @@ public class eliminarCursoControlador {
         String direc = eliminar.getText().trim();
         int codigo=Integer.parseInt(direc);
         int cont = 0;
-        for (Curso curso1 : Curso.cursos) {
+        for (Curso curso1 : Curso.cursos.values()) {
             if (curso1.codigo==codigo){
                 ListView.getItems().add(curso1);
                 return;
@@ -41,9 +41,10 @@ public class eliminarCursoControlador {
     public void confirmarE(ActionEvent actionEvent) throws IOException {
         String direc = eliminar.getText().trim();
         int codigo=Integer.parseInt(direc);
-        for (Curso curso1 : Curso.cursos) {
+        for (Curso curso1 : Curso.cursos.values()) {
             if (curso1.codigo==(codigo)) {
-                Curso.cursos.remove(curso1);
+                int c = curso1.codigo;
+                Curso.cursos.remove(c,curso1);
                 return;
             }
         }

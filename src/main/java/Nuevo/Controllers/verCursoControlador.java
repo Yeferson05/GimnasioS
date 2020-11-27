@@ -16,7 +16,7 @@ public class verCursoControlador implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        for (Curso curso1 : Curso.cursos) {
+        for (Curso curso1 : Curso.cursos.values()) {
             ListView.getItems().add(curso1);
         }
     }
