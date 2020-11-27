@@ -2,6 +2,7 @@ package Nuevo.Controllers;
 
 
 import Nuevo.App;
+import Nuevo.Curso;
 import Nuevo.Sede;
 import Nuevo.Zona;
 import javafx.collections.FXCollections;
@@ -57,10 +58,18 @@ public class busquedaControlador implements Initializable {
             zo.add("Zona");
             atributo.setItems(FXCollections.observableList(zo));
 
+        }else if (enti.equals("Curso")){
+            ArrayList<String> cur = new ArrayList<>();
+            cur.add("Nombre curso");
+            cur.add("Codigo");
+            cur.add("Intensidad");
+            atributo.setItems(FXCollections.observableList(cur));
+
         }
     }
     @FXML
     public void buscar(ActionEvent actionEvent) throws IOException {
+        clean();
         String atri="";
         if (String.valueOf(atributo.getValue()).equals("null") || ingresar.getText().trim().equals("")) {
             mensajeG.setText("ERROR: Existen campos vacios.");
@@ -74,7 +83,6 @@ public class busquedaControlador implements Initializable {
             for (Sede sede1 : Sede.tabla.values()) {
                 if (sede1.nombre.toLowerCase().equals(pase)) {
                     ListView.getItems().add(sede1);
-                }else{
                     cont++;
                 }
             }if (cont==0){
@@ -85,7 +93,6 @@ public class busquedaControlador implements Initializable {
             for (Sede sede1 : Sede.tabla.values()) {
                 if (sede1.direccion.toLowerCase().equals(pase)) {
                     ListView.getItems().add(sede1);
-                }else{
                     cont++;
                 }
             }if (cont==0){
@@ -96,7 +103,6 @@ public class busquedaControlador implements Initializable {
             for (Sede sede1 : Sede.tabla.values()) {
                 if (sede1.ciudad.toLowerCase().equals(pase)) {
                     ListView.getItems().add(sede1);
-                }else{
                     cont++;
                 }
             }if (cont==0){
@@ -108,7 +114,6 @@ public class busquedaControlador implements Initializable {
             for (Zona zona1 : Zona.zonas) {
                 if (zona1.id == nu) {
                     ListView.getItems().add(zona1);
-                }else{
                     cont++;
                 }
             }if (cont==0){
@@ -119,16 +124,56 @@ public class busquedaControlador implements Initializable {
             for (Zona zona1 : Zona.zonas) {
                 if (zona1.zona.toLowerCase().equals(pase)) {
                     ListView.getItems().add(zona1);
-                }else{
                     cont++;
                 }
             }if (cont==0){
                 mensajeG.setText("No se encuentra la zona");
+            }
+        }else if (atri.equals("Nombre curso")) {
+            int cont = 0;
+            for (Curso curso1 : Curso.cursos) {
+                if (curso1.nombre.toLowerCase().equals(pase)) {
+                    ListView.getItems().add(curso1);
+                    cont++;
+                }
+            }
+            if (cont == 0) {
+                mensajeG.setText("No se encuentró ningun curso con este nombre");
+            }
+        }else if (atri.equals("Intensidad")) {
+            int cont = 0;
+            for (Curso curso1 : Curso.cursos) {
+                if (curso1.intesidadHora.toLowerCase().equals(pase)) {
+                    ListView.getItems().add(curso1);
+                    cont++;
+                }
+            }
+            if (cont == 0) {
+                mensajeG.setText("No se encuentró ningun curso con esta intensidad");
+            }
+        }else if (atri.equals("Codigo")) {
+            int cont = 0;
+            int intpase=Integer.parseInt(pase);
+            for (Curso curso1 : Curso.cursos) {
+                if (curso1.codigo==(intpase)) {
+                    ListView.getItems().add(curso1);
+                    cont++;
+                }
+            }
+            if (cont == 0) {
+                mensajeG.setText("No se encuentró ningun curso con este codigo");
             }
         }
     }
     @FXML
     public void volver(ActionEvent actionEvent) throws IOException {
         App.setRoot("menuPrincipal");
+    }
+    @FXML
+    public void clean(){
+        cleanWarnings();
+    }
+    public void cleanWarnings(){
+        mensajeG.setText("");
     }
 }
