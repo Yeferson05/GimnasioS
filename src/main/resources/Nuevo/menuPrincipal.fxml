@@ -5,32 +5,21 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.paint.LinearGradient?>
-<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nuevo.Controllers.menuPrincipalControlador">
    <children>
-      <ImageView fx:id="ImageView" fitHeight="400.0" fitWidth="600.0" layoutX="4.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ImageView fx:id="ImageView" fitHeight="500.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
             <Image url="@../../../nike_gris.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="184.0" layoutY="33.0" prefHeight="27.0" prefWidth="232.0" text="Menú principal (sin hacer)" AnchorPane.leftAnchor="184.0" AnchorPane.rightAnchor="184.0">
+      <Label layoutX="184.0" layoutY="33.0" prefHeight="27.0" prefWidth="232.0" text="         Menú principal " textFill="#e1d4d4" AnchorPane.leftAnchor="184.0" AnchorPane.rightAnchor="184.0">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
-         <textFill>
-            <LinearGradient endX="1.0" endY="1.0">
-               <stops>
-                  <Stop color="#05bc4e" />
-                  <Stop color="#0da10d" offset="0.6494845360824741" />
-                  <Stop color="#06ae4f" offset="1.0" />
-               </stops>
-            </LinearGradient>
-         </textFill>
       </Label>
-      <Label layoutX="78.0" layoutY="78.0" text="Escoja una opcion" textFill="#2cb215" AnchorPane.leftAnchor="78.0">
+      <Label layoutX="78.0" layoutY="78.0" text="Escoja una opcion" textFill="#ffeded" AnchorPane.leftAnchor="78.0">
          <font>
             <Font size="14.0" />
          </font>
@@ -38,11 +27,7 @@
       <Button layoutX="416.0" layoutY="323.0" mnemonicParsing="false" onAction="#salir" text="Salir" />
       <Button layoutX="78.0" layoutY="118.0" mnemonicParsing="false" onAction="#administracion" text="Administración" AnchorPane.bottomAnchor="260.0" AnchorPane.leftAnchor="78.0" />
       <Button layoutX="78.0" layoutY="175.0" mnemonicParsing="false" onAction="#busqueda" text="Busqueda" AnchorPane.bottomAnchor="220.0" AnchorPane.leftAnchor="78.0" />
-<<<<<<< Updated upstream
-      <Button layoutX="82.0" layoutY="255.0" mnemonicParsing="false" onAction="#diagnostico" text="Diagnostico de inconsistencias" AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="78.0" />
-=======
-      <Button layoutX="78.0" layoutY="191.0" mnemonicParsing="false" onAction="#diagnostico" text="Diagnostico de inconsistencias" AnchorPane.bottomAnchor="184.0" AnchorPane.leftAnchor="78.0" />
+      <Button layoutX="82.0" layoutY="255.0" mnemonicParsing="false" text="Diagnostico de inconsistencias" AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="78.0" />
       <Button layoutX="82.0" layoutY="293.0" mnemonicParsing="false" text="Guardar" AnchorPane.bottomAnchor="140.0" AnchorPane.leftAnchor="78.0" />
->>>>>>> Stashed changes
    </children>
 </AnchorPane>
