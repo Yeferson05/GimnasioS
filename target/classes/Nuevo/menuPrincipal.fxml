@@ -19,7 +19,6 @@
       <Button layoutX="416.0" layoutY="323.0" mnemonicParsing="false" onAction="#salir" text="Salir" />
       <Button layoutX="78.0" layoutY="118.0" mnemonicParsing="false" onAction="#administracion" text="Administración" AnchorPane.bottomAnchor="260.0" AnchorPane.leftAnchor="78.0" />
       <Button layoutX="78.0" layoutY="175.0" mnemonicParsing="false" onAction="#busqueda" text="Busqueda" AnchorPane.bottomAnchor="220.0" AnchorPane.leftAnchor="78.0" />
-      <Button layoutX="82.0" layoutY="255.0" mnemonicParsing="false" text="Diagnostico de inconsistencias" AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="78.0" />
-      <Button layoutX="82.0" layoutY="293.0" mnemonicParsing="false" text="Guardar" AnchorPane.bottomAnchor="140.0" AnchorPane.leftAnchor="78.0" />
+      <Button layoutX="82.0" layoutY="255.0" mnemonicParsing="false" onAction="#diagnostico" text="Diagnostico de inconsistencias" AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="78.0" />
    </children>
 </AnchorPane>

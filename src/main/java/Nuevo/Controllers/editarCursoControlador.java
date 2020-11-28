@@ -53,7 +53,6 @@ public class editarCursoControlador {
         String nuevoI = nuevaIntensidad.getText().trim();
         String nuevoC = nuevoCodigo.getText().trim();
         int nuevoCodigo=Integer.parseInt(nuevoC);
-        boolean encontrado=false;
 
         for (Curso curso1 : Curso.cursos.values()) {
             if (curso1.codigo==(codi)) {

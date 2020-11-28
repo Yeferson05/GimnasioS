@@ -1,5 +1,6 @@
 package Nuevo.Controllers;
 
+import Nuevo.App;
 import Nuevo.Sede;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -22,5 +23,9 @@ public class diagnosticoControlador implements Initializable {
     public void envia (ActionEvent event)throws IOException {
         //Sede.lis.addVertex(Sede.tabla.get(""));
         //Sede.lis.addEdge(Sede.tabla.get(""), Sede.tabla.get(""));
+    }
+
+    public void volver(ActionEvent actionEvent) throws IOException {
+        App.setRoot("menuPrincipal");
     }
 }

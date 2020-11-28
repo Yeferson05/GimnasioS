@@ -16,6 +16,10 @@ public class menuPrincipalControlador {
         App.setRoot("busqueda");
     }
     @FXML
+    private void diagnostico (ActionEvent event) throws IOException {
+        App.setRoot("diagnostico");
+    }
+    @FXML
     public void salir(ActionEvent actionEvent) throws IOException {
         App.setRoot("ingresar");
     }
