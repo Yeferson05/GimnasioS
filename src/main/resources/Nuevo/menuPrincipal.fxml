@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nuevo.Controllers.menuPrincipalControlador">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nuevo.Controllers.menuPrincipalControlador">
    <children>
       <ImageView fx:id="ImageView" fitHeight="500.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
@@ -27,7 +25,6 @@
       <Button layoutX="416.0" layoutY="323.0" mnemonicParsing="false" onAction="#salir" text="Salir" />
       <Button layoutX="78.0" layoutY="118.0" mnemonicParsing="false" onAction="#administracion" text="Administración" AnchorPane.bottomAnchor="260.0" AnchorPane.leftAnchor="78.0" />
       <Button layoutX="78.0" layoutY="175.0" mnemonicParsing="false" onAction="#busqueda" text="Busqueda" AnchorPane.bottomAnchor="220.0" AnchorPane.leftAnchor="78.0" />
-      <Button layoutX="82.0" layoutY="255.0" mnemonicParsing="false" text="Diagnostico de inconsistencias" AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="78.0" />
-      <Button layoutX="82.0" layoutY="293.0" mnemonicParsing="false" text="Guardar" AnchorPane.bottomAnchor="140.0" AnchorPane.leftAnchor="78.0" />
+      <Button layoutX="82.0" layoutY="255.0" mnemonicParsing="false" onAction="#diagnostico" text="Diagnostico de inconsistencias" AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="78.0" />
    </children>
 </AnchorPane>

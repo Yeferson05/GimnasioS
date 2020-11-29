@@ -27,4 +27,8 @@ public class sedeControlador {
     public void volver(ActionEvent actionEvent) throws IOException {
         App.setRoot("administracion");
     }
+
+    public void agregarCurso(ActionEvent actionEvent) throws IOException {
+        App.setRoot("agregarCursoASede");
+    }
 }

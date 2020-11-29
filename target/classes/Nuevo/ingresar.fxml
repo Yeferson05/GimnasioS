@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="555.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nuevo.Controllers.ingresarControlador">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nuevo.Controllers.ingresarControlador">
    <children>
-      <ImageView fx:id="Imagen" fitHeight="400.0" fitWidth="600.0" layoutX="43.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="43.0" AnchorPane.rightAnchor="53.0" AnchorPane.topAnchor="0.0">
+      <ImageView fx:id="Imagen" fitHeight="400.0" fitWidth="600.0" layoutX="52.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="0.0">
          <image>
             <Image url="@../../../inicio.jpg" />
          </image>
@@ -25,7 +25,7 @@
          <font>
             <Font size="14.0" />
          </font></Label>
-      <Label fx:id="mensajeUsuario" alignment="CENTER" contentDisplay="CENTER" layoutX="111.0" layoutY="145.0" prefHeight="25.0" prefWidth="369.0" textAlignment="JUSTIFY" textFill="#e80a0a" wrapText="true" />
+      <Label fx:id="mensajeUsuario" alignment="CENTER" contentDisplay="CENTER" layoutX="159.0" layoutY="145.0" prefHeight="25.0" prefWidth="369.0" textAlignment="JUSTIFY" textFill="#e80a0a" wrapText="true" />
       <TextField fx:id="usuario" layoutX="182.0" layoutY="120.0" prefHeight="25.0" prefWidth="226.0" />
       <Label layoutX="228.0" layoutY="170.0" text="Ingrese la contraseña:">
          <font>
@@ -35,6 +35,5 @@
       <Button layoutX="258.0" layoutY="338.0" mnemonicParsing="false" onAction="#iniciarSesion" text="Iniciar sesión" />
       <Label fx:id="mensajeGeneral" alignment="CENTER" contentDisplay="CENTER" layoutX="182.0" layoutY="279.0" prefHeight="25.0" prefWidth="226.0" textAlignment="CENTER" textFill="#f50000" />
       <PasswordField fx:id="contraseña" layoutX="221.0" layoutY="200.0" />
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-25.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>
