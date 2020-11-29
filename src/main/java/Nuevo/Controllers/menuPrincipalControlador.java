@@ -12,14 +12,14 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class menuPrincipalControlador {
-
-    /*public Label saludoin;
+public class menuPrincipalControlador implements Initializable{
+    @FXML
+    public Label saludoin;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         saludoin.setText("Bienvenido "+saludoIngreso.saludo);
-    }*/
+    }
 
 
 
