@@ -11,7 +11,7 @@ import org.jgrapht.graph.SimpleGraph;
 
 
 import java.io.IOException;
-
+import static Nuevo.Zona.zonas;
 import static Nuevo.Curso.cursos;
 import static Nuevo.Sede.tabla;
 
@@ -52,20 +52,25 @@ public class App extends Application {
         Usuario usuarioTres = new Usuario(10047432,"Camilo","Murillo","murillo27@gmail.com","1234camilo");
         Usuario.usuarios.add(usuarioTres);
 
-        Curso cursosUno = new Curso("Crossover",100370,"2");
+        Curso cursosUno = new Curso("Crossfit",100370,"2");
         cursos.put(cursosUno.codigo, cursosUno);
+        Curso cursoDos = new Curso("Yoga",100371,"3");
+        cursos.put(cursoDos.codigo, cursoDos);
+        Curso cursosTres = new Curso ("Boxeo",100372,"4");
+        cursos.put(cursosTres.codigo, cursosTres);
 
-        /*Sede sedeUno = new Sede("Brooklyn","Medellin","Cra 12, C 05 ");
+        Sede sedeUno = new Sede("YogaFitness","Medellin","Cra 12, C 05 ",cursoDos);
         tabla.put(sedeUno.direccion, sedeUno);
-
-        Zona zonaaUno = new Zona(112,"pesas");
-        zon.put(zonaaUno.id, zonaaUno);*/
-
-        /*Zona nuevaZona = new Zona(1,"Pesas");
-        Zona.zonas.add(nuevaZona);
-        Zona nuevaZona2 = new Zona (2,"Cardio");
-        Zona.zonas.add(nuevaZona2);*/
-        launch();
+        Sede sedeDos = new Sede("BoxingGym","Cali","Cll 40, C 06",cursosTres);
+        tabla.put(sedeDos.direccion, sedeDos);
+        Sede sedeTres = new Sede ("CrossBogota","Bogota","Cra 15, A 07",cursosUno);
+        tabla.put(sedeTres.direccion, sedeTres);
+        Zona zona1 = new Zona (100101,"Pesas");
+        zonas.put(zona1.id,zona1);
+        Zona zona2 = new Zona (100102,"Cardio");
+        zonas.put(zona2.id,zona2);
+        Zona zona3= new Zona (100103,"Estiramiento");
+        zonas.put(zona3.id,zona3);
     }
 
 }
