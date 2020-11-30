@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nuevo.Controllers.menuPrincipalControlador">
    <children>
@@ -27,7 +25,7 @@
       <Button layoutX="506.0" layoutY="342.0" mnemonicParsing="false" onAction="#salir" prefHeight="34.0" prefWidth="60.0" text="Salir" />
       <Button layoutX="41.0" layoutY="155.0" mnemonicParsing="false" onAction="#administracion" prefHeight="34.0" prefWidth="187.0" text="Administración" AnchorPane.bottomAnchor="214.0" AnchorPane.leftAnchor="41.0" />
       <Button layoutX="41.0" layoutY="210.0" mnemonicParsing="false" onAction="#busqueda" prefHeight="34.0" prefWidth="187.0" text="Busqueda" AnchorPane.bottomAnchor="159.0" AnchorPane.leftAnchor="41.0" />
-      <Button layoutX="41.0" layoutY="261.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="187.0" text="Diagnostico de inconsistencias" AnchorPane.bottomAnchor="108.0" AnchorPane.leftAnchor="41.0" />
+      <Button layoutX="41.0" layoutY="261.0" mnemonicParsing="false" onAction="#diagnostico" prefHeight="34.0" prefWidth="187.0" text="Diagnostico de inconsistencias" AnchorPane.bottomAnchor="108.0" AnchorPane.leftAnchor="41.0" />
       <Label fx:id="saludoin" alignment="CENTER" layoutX="120.0" layoutY="65.0" prefHeight="27.0" prefWidth="361.0" text="HOLA" textFill="WHITE">
          <font>
             <Font name="Tw Cen MT Condensed Extra Bold" size="18.0" />
