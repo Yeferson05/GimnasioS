@@ -1,12 +1,24 @@
 package Nuevo.Controllers;
 
 import Nuevo.App;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
 import java.io.IOException;
 
 
+<<<<<<< HEAD
+=======
+    @FXML
+    public void volver(ActionEvent actionEvent) throws IOException {
+        App.setRoot("sede");
+    }
+=======
+>>>>>>> main
 import Nuevo.Curso;
 import Nuevo.Sede;
 import javafx.event.ActionEvent;
@@ -60,5 +72,11 @@ public class agregarCursoASedeControlador {
         codCurso.setText("");
         nitSede.setText("");
     }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> main
+>>>>>>> main
 }
 
