@@ -27,7 +27,7 @@ public class agregarZonaACursoControlador {
         int codiCurso=Integer.parseInt(codigocurso);
         int ideZona=Integer.parseInt(idZona);
         Curso nuevoCurso=cursos.get(codiCurso);
-        Zona nuevaZona;
+        Zona nuevaZona = null;
         for (Zona zona1 : zonas.values()) {
             if (zona1.id==(ideZona)) {
                 nuevaZona=zonas.get(codiCurso);
@@ -38,11 +38,11 @@ public class agregarZonaACursoControlador {
 
 
 
-        //for (Sede sede1 : Sede.tabla.values()) {
-        //    if (sede1.nombre.toLowerCase().equals(pase)) {
-        //        sede1.curso=cursede;
-        //    }
-        //}
+        for (Curso curso1 : cursos.values()) {
+           if (curso1.codigo==codiCurso) {
+                curso1.asociarZona(nuevaZona);
+            }
+        }
     }
 
 

@@ -9,31 +9,45 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nuevo.Controllers.ingresarControlador">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nuevo.Controllers.ingresarControlador">
    <children>
-      <ImageView fx:id="Imagen" fitHeight="400.0" fitWidth="600.0" layoutX="52.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="52.0" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="0.0">
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../inicio.jpg" />
+            <Image url="@images/login.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="214.0" layoutY="33.0" text="Iniciar sesión  ">
+      <Label layoutX="240.0" layoutY="71.0" text="INICIAR SESION" textFill="#f8f8f8">
          <font>
-            <Font name="System Bold Italic" size="24.0" />
+            <Font name="Tw Cen MT Condensed Extra Bold" size="20.0" />
          </font>
       </Label>
-      <Label layoutX="138.0" layoutY="90.0" text="Ingrese su numero de documento/correo electronico:">
+      <Label layoutX="97.0" layoutY="115.0" text="INGRESE SU NUMERO DE IDENTIFICACIÓN/CORREO ELECTRONICO:" textFill="#9a0707">
          <font>
-            <Font size="14.0" />
+            <Font name="Tw Cen MT Condensed Extra Bold" size="16.0" />
          </font></Label>
-      <Label fx:id="mensajeUsuario" alignment="CENTER" contentDisplay="CENTER" layoutX="159.0" layoutY="145.0" prefHeight="25.0" prefWidth="369.0" textAlignment="JUSTIFY" textFill="#e80a0a" wrapText="true" />
-      <TextField fx:id="usuario" layoutX="182.0" layoutY="120.0" prefHeight="25.0" prefWidth="226.0" />
-      <Label layoutX="228.0" layoutY="170.0" text="Ingrese la contraseña:">
+      <Label fx:id="mensajeUsuario" alignment="CENTER" contentDisplay="CENTER" layoutX="116.0" layoutY="166.0" prefHeight="25.0" prefWidth="369.0" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
          <font>
-            <Font size="14.0" />
+            <Font name="Tw Cen MT Condensed Extra Bold" size="15.0" />
          </font></Label>
-      <Label fx:id="mensajeContraseña" alignment="CENTER" contentDisplay="CENTER" layoutX="182.0" layoutY="225.0" prefHeight="25.0" prefWidth="226.0" textAlignment="JUSTIFY" textFill="#e80909" />
-      <Button layoutX="258.0" layoutY="338.0" mnemonicParsing="false" onAction="#iniciarSesion" text="Iniciar sesión" />
-      <Label fx:id="mensajeGeneral" alignment="CENTER" contentDisplay="CENTER" layoutX="182.0" layoutY="279.0" prefHeight="25.0" prefWidth="226.0" textAlignment="CENTER" textFill="#f50000" />
-      <PasswordField fx:id="contraseña" layoutX="221.0" layoutY="200.0" />
+      <TextField fx:id="usuario" layoutX="182.0" layoutY="134.0" prefHeight="25.0" prefWidth="226.0" />
+      <Label layoutX="215.0" layoutY="211.0" text="INGRESE LA CONTRASEÑA:" textFill="#a40808">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="16.0" />
+         </font></Label>
+      <Label fx:id="mensajeContraseña" alignment="CENTER" contentDisplay="CENTER" layoutX="164.0" layoutY="263.0" prefHeight="32.0" prefWidth="273.0" textAlignment="JUSTIFY" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="15.0" />
+         </font></Label>
+      <Button layoutX="258.0" layoutY="336.0" mnemonicParsing="false" onAction="#iniciarSesion" text="Iniciar sesión" />
+      <Label fx:id="mensajeGeneral" alignment="CENTER" contentDisplay="CENTER" layoutX="164.0" layoutY="295.0" prefHeight="32.0" prefWidth="273.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="15.0" />
+         </font></Label>
+      <PasswordField fx:id="contraseña" layoutX="182.0" layoutY="230.0" prefHeight="25.0" prefWidth="226.0" />
+      <Label layoutX="190.0" layoutY="14.0" text="SISTEMA DE GIMNASIOS" textFill="#f5f5f5">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="24.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

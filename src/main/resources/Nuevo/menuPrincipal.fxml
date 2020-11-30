@@ -1,30 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nuevo.Controllers.menuPrincipalControlador">
    <children>
-      <ImageView fx:id="ImageView" fitHeight="500.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ImageView fitHeight="403.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../nike_gris.jpg" />
+            <Image url="@images/menPrin.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="184.0" layoutY="33.0" prefHeight="27.0" prefWidth="232.0" text="         Menú principal " textFill="#e1d4d4" AnchorPane.leftAnchor="184.0" AnchorPane.rightAnchor="184.0">
+      <Label alignment="CENTER" layoutX="184.0" layoutY="22.0" prefHeight="27.0" prefWidth="232.0" text="MENÚ PRINCIPAL" textFill="WHITE" AnchorPane.leftAnchor="184.0" AnchorPane.rightAnchor="184.0">
          <font>
-            <Font name="System Bold Italic" size="18.0" />
+            <Font name="Tw Cen MT Condensed Extra Bold" size="30.0" />
          </font>
       </Label>
-      <Label layoutX="78.0" layoutY="78.0" text="Escoja una opcion" textFill="#ffeded" AnchorPane.leftAnchor="78.0">
+      <Label layoutX="60.0" layoutY="108.0" text="ESCOJA UNA OPCIÓN:" textFill="WHITE" AnchorPane.leftAnchor="60.0">
          <font>
-            <Font size="14.0" />
+            <Font name="Tw Cen MT Condensed Extra Bold" size="18.0" />
          </font>
       </Label>
-      <Button layoutX="416.0" layoutY="323.0" mnemonicParsing="false" onAction="#salir" text="Salir" />
-      <Button layoutX="78.0" layoutY="118.0" mnemonicParsing="false" onAction="#administracion" text="Administración" AnchorPane.bottomAnchor="260.0" AnchorPane.leftAnchor="78.0" />
-      <Button layoutX="78.0" layoutY="175.0" mnemonicParsing="false" onAction="#busqueda" text="Busqueda" AnchorPane.bottomAnchor="220.0" AnchorPane.leftAnchor="78.0" />
-      <Button layoutX="82.0" layoutY="255.0" mnemonicParsing="false" onAction="#diagnostico" text="Diagnostico de inconsistencias" AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="78.0" />
+      <Button layoutX="506.0" layoutY="342.0" mnemonicParsing="false" onAction="#salir" prefHeight="34.0" prefWidth="60.0" text="Salir" />
+      <Button layoutX="41.0" layoutY="155.0" mnemonicParsing="false" onAction="#administracion" prefHeight="34.0" prefWidth="187.0" text="Administración" AnchorPane.bottomAnchor="214.0" AnchorPane.leftAnchor="41.0" />
+      <Button layoutX="41.0" layoutY="210.0" mnemonicParsing="false" onAction="#busqueda" prefHeight="34.0" prefWidth="187.0" text="Busqueda" AnchorPane.bottomAnchor="159.0" AnchorPane.leftAnchor="41.0" />
+      <Button layoutX="41.0" layoutY="261.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="187.0" text="Diagnostico de inconsistencias" AnchorPane.bottomAnchor="108.0" AnchorPane.leftAnchor="41.0" />
+      <Label fx:id="saludoin" alignment="CENTER" layoutX="120.0" layoutY="65.0" prefHeight="27.0" prefWidth="361.0" text="HOLA" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Condensed Extra Bold" size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
