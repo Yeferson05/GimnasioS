@@ -1,7 +1,9 @@
 package Nuevo;
 
 
+import java.util.ArrayList;
 import java.util.Hashtable;
+import java.util.List;
 
 public class Curso {
 
@@ -10,25 +12,27 @@ public class Curso {
     public String nombre;
     public int codigo;
     public String intesidadHora;
+    public List<Zona> zonas;
 
-    public Curso(String nombre, int codigo, String intesidadHora) {
-
-        this.nombre = nombre;
-        this.codigo = codigo;
-        this.intesidadHora = intesidadHora;
-        App.grafo.addVertex(this);
-
-    }
     @Override
     public String toString() {
         return "Curso{" +
                 "nombre='" + nombre + '\'' +
                 ", codigo=" + codigo +
                 ", intesidadHora='" + intesidadHora + '\'' +
+                ", zonas=" + zonas +
                 '}';
     }
-    public void  crearConexion (Object destino){
-        App.grafo.addEdge(this, destino);
+
+    public Curso(String nombre, int codigo, String intesidadHora) {
+        this.nombre = nombre;
+        this.codigo = codigo;
+        this.intesidadHora = intesidadHora;
+        this.zonas=new ArrayList<>();
+    }
+
+    public void  asociarZona (Zona zona){
+        this.zonas.add(zona);
     }
 
 }

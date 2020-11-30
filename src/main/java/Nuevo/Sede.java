@@ -15,25 +15,26 @@ public class Sede {
     public String nombre;
     public String direccion;
     public String ciudad;
+    public Curso curso;
 
-    public Sede( String nombre, String ciudad, String direccion) {
-        this.nombre = nombre;
-        this.direccion = direccion;
-        this.ciudad = ciudad;
-        App.grafo.addVertex(this);
-        //App.grafo.addEdge()
-    }
     @Override
     public String toString() {
         return "Sede{" +
                 "nombre='" + nombre + '\'' +
                 ", direccion='" + direccion + '\'' +
                 ", ciudad='" + ciudad + '\'' +
+                ", curso=" + curso +
                 '}';
     }
-    public void  crearConexion (Object destino){
-        App.grafo.addEdge(this, destino);
+
+    public Sede(String nombre, String ciudad, String direccion, Curso curso) {
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.ciudad = ciudad;
+        this.curso=curso;
+        //App.grafo.addVertex(this);
+        //App.grafo.addEdge()
     }
-    
+
 }
 

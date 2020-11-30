@@ -14,13 +14,12 @@ import java.io.IOException;
 
 import static Nuevo.Curso.cursos;
 import static Nuevo.Sede.tabla;
-import static Nuevo.Zona.zon;
 
 /**
  * JavaFX App
  */
 public class App extends Application {
-    public static Graph<Object, DefaultEdge> grafo = new SimpleGraph<>(DefaultEdge.class);
+    public static Graph<Sede, DefaultEdge> grafo = new SimpleGraph<>(DefaultEdge.class);
     private static Scene scene;
 
     @Override
@@ -56,11 +55,11 @@ public class App extends Application {
         Curso cursosUno = new Curso("Crossover",100370,"2");
         cursos.put(cursosUno.codigo, cursosUno);
 
-        Sede sedeUno = new Sede("Brooklyn","Medellin","Cra 12, C 05 ");
+        /*Sede sedeUno = new Sede("Brooklyn","Medellin","Cra 12, C 05 ");
         tabla.put(sedeUno.direccion, sedeUno);
 
         Zona zonaaUno = new Zona(112,"pesas");
-        zon.put(zonaaUno.id, zonaaUno);
+        zon.put(zonaaUno.id, zonaaUno);*/
 
         /*Zona nuevaZona = new Zona(1,"Pesas");
         Zona.zonas.add(nuevaZona);

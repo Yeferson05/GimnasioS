@@ -111,7 +111,7 @@ public class busquedaControlador implements Initializable {
         }else if (atri.equals("Id")){
             int nu = Integer.parseInt(ing);
             int cont =0;
-            for (Zona zona1 : Zona.zon.values()) {
+            for (Zona zona1 : Zona.zonas.values()) {
                 if (zona1.id == nu) {
                     ListView.getItems().add(zona1);
                     cont++;
@@ -121,7 +121,7 @@ public class busquedaControlador implements Initializable {
             }
         }else if (atri.equals("Zona")){
             int cont =0;
-            for (Zona zona1 : Zona.zon.values()) {
+            for (Zona zona1 : Zona.zonas.values()) {
                 if (zona1.zona.toLowerCase().equals(pase)) {
                     ListView.getItems().add(zona1);
                     cont++;
