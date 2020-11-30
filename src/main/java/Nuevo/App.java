@@ -71,6 +71,7 @@ public class App extends Application {
         zonas.put(zona2.id,zona2);
         Zona zona3= new Zona (100103,"Estiramiento");
         zonas.put(zona3.id,zona3);
+        launch();
     }
 
 }
