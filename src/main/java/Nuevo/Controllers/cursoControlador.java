@@ -25,4 +25,8 @@ public class cursoControlador {
     public void volver(ActionEvent actionEvent) throws IOException {
         App.setRoot("administracion");
     }
+
+    public void agregarZona(ActionEvent actionEvent) throws IOException {
+        App.setRoot("agregarZonaACurso");
+    }
 }

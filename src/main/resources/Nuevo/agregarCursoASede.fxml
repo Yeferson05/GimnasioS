@@ -6,11 +6,15 @@
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Nuevo.Controllers.agregarCursoASedeControlador">
    <children>
       <Label layoutX="32.0" layoutY="105.0" prefHeight="17.0" prefWidth="254.0" text="ingrese el codigo del curso que desea ingresar:" />
-      <TextField layoutX="365.0" layoutY="101.0" />
-      <Button layoutX="323.0" layoutY="148.0" mnemonicParsing="false" text="Validar" />
-      <Button layoutX="483.0" layoutY="339.0" mnemonicParsing="false" text="Volver" />
+      <TextField fx:id="codCurso" layoutX="365.0" layoutY="101.0" />
+      <Button layoutX="323.0" layoutY="148.0" mnemonicParsing="false" onAction="#validar" text="Validar" />
+      <Button layoutX="504.0" layoutY="346.0" mnemonicParsing="false" onAction="#volver" text="Volver" />
       <Label layoutX="32.0" layoutY="52.0" prefHeight="17.0" prefWidth="329.0" text="ingrese el nit de la sede a la cual le desea ingresar el curso" />
-      <TextField layoutX="365.0" layoutY="48.0" />
-      <Label layoutX="66.0" layoutY="200.0" prefHeight="17.0" prefWidth="98.0" text="Resultados" />
+      <TextField fx:id="nitSede" layoutX="365.0" layoutY="48.0" />
+      <Button layoutX="70.0" layoutY="161.0" mnemonicParsing="false" text="Resultados" />
+      <ScrollPane layoutX="7.0" layoutY="214.0" prefHeight="112.0" prefWidth="587.0">
+         <content>
+            <ListView fx:id="listView" prefHeight="111.0" prefWidth="571.0" />
+         </content></ScrollPane>
    </children>
 </AnchorPane>

@@ -37,12 +37,12 @@ public class editarZonaControlador {
             warningMessage1.setText("ERROR: El ID debe ser un numero.");
             return;
         }
-        if (Zona.zon.isEmpty()){
+        if (Zona.zonas.isEmpty()){
             warningMessage1.setText("ERROR: La lista de zonas se encuentra vacía.");
             return;
         }
         boolean check = false;
-        for (Zona zona : Zona.zon.values()){
+        for (Zona zona : Zona.zonas.values()){
             if (zona.id == ID){
                 check=true;
                 ListView.getItems().add(zona);
@@ -69,7 +69,7 @@ public class editarZonaControlador {
         }
         String nZona = zonaNueva.getText().trim();
 
-        for (Zona zona : Zona.zon.values()) {
+        for (Zona zona : Zona.zonas.values()) {
             if (zona.id == ID) {
                 zona.zona = nZona;
             }
