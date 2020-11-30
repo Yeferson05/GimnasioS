@@ -8,7 +8,7 @@
       <Label layoutX="32.0" layoutY="105.0" prefHeight="17.0" prefWidth="254.0" text="ingrese el codigo del curso que desea ingresar:" />
       <TextField layoutX="365.0" layoutY="101.0" />
       <Button layoutX="323.0" layoutY="148.0" mnemonicParsing="false" text="Validar" />
-      <Button layoutX="483.0" layoutY="339.0" mnemonicParsing="false" text="Volver" />
+      <Button fx:id="volver" layoutX="483.0" layoutY="339.0" mnemonicParsing="false" onAction="#volver" text="Volver" />
       <Label layoutX="32.0" layoutY="52.0" prefHeight="17.0" prefWidth="329.0" text="ingrese el nit de la sede a la cual le desea ingresar el curso" />
       <TextField layoutX="365.0" layoutY="48.0" />
       <Label layoutX="66.0" layoutY="200.0" prefHeight="17.0" prefWidth="98.0" text="Resultados" />

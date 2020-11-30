@@ -12,12 +12,12 @@
             <Image url="@images/menPrin.jpg" />
          </image>
       </ImageView>
-      <Label alignment="CENTER" layoutX="184.0" layoutY="22.0" prefHeight="27.0" prefWidth="232.0" text="MENÚ PRINCIPAL" textFill="WHITE" AnchorPane.leftAnchor="184.0" AnchorPane.rightAnchor="184.0">
+      <Label alignment="CENTER" layoutX="184.0" layoutY="22.0" prefHeight="27.0" prefWidth="232.0" text="MENÚ PRINCIPAL" textFill="#dba07f" AnchorPane.leftAnchor="184.0" AnchorPane.rightAnchor="184.0">
          <font>
             <Font name="Tw Cen MT Condensed Extra Bold" size="30.0" />
          </font>
       </Label>
-      <Label layoutX="60.0" layoutY="108.0" text="ESCOJA UNA OPCIÓN:" textFill="WHITE" AnchorPane.leftAnchor="60.0">
+      <Label layoutX="60.0" layoutY="108.0" text="ESCOJA UNA OPCIÓN:" textFill="#d19879" AnchorPane.leftAnchor="60.0">
          <font>
             <Font name="Tw Cen MT Condensed Extra Bold" size="18.0" />
          </font>
@@ -26,7 +26,7 @@
       <Button layoutX="41.0" layoutY="155.0" mnemonicParsing="false" onAction="#administracion" prefHeight="34.0" prefWidth="187.0" text="Administración" AnchorPane.bottomAnchor="214.0" AnchorPane.leftAnchor="41.0" />
       <Button layoutX="41.0" layoutY="210.0" mnemonicParsing="false" onAction="#busqueda" prefHeight="34.0" prefWidth="187.0" text="Busqueda" AnchorPane.bottomAnchor="159.0" AnchorPane.leftAnchor="41.0" />
       <Button layoutX="41.0" layoutY="261.0" mnemonicParsing="false" onAction="#diagnostico" prefHeight="34.0" prefWidth="187.0" text="Diagnostico de inconsistencias" AnchorPane.bottomAnchor="108.0" AnchorPane.leftAnchor="41.0" />
-      <Label fx:id="saludoin" alignment="CENTER" layoutX="120.0" layoutY="65.0" prefHeight="27.0" prefWidth="361.0" text="HOLA" textFill="WHITE">
+      <Label fx:id="saludoin" alignment="CENTER" layoutX="120.0" layoutY="65.0" prefHeight="27.0" prefWidth="361.0" text="BIENVENIDOS" textFill="#e39c76">
          <font>
             <Font name="Tw Cen MT Condensed Extra Bold" size="18.0" />
          </font>
