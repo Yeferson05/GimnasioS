@@ -1,6 +1,7 @@
 package Nuevo.Controllers;
 
 import Nuevo.App;
+import Nuevo.Curso;
 import Nuevo.Sede;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -10,6 +11,8 @@ import javafx.scene.control.TextField;
 
 import java.io.IOException;
 import java.util.Hashtable;
+
+import static Nuevo.Curso.cursos;
 
 public class crearSedeControlador {
     //public static Hashtable<Integer,Sede> tabla = new Hashtable<>();
@@ -30,7 +33,8 @@ public class crearSedeControlador {
         String nombre = nombreSede.getText().trim();
         String ciudad = ciudadSede.getText().trim();
         String direccion = direccionSede.getText().trim();
-        Sede nuevaSede = new Sede(nombre,ciudad,direccion);
+        Curso nuevoCurso = null;
+        Sede nuevaSede = new Sede(nombre,ciudad,direccion, nuevoCurso);
         Sede.tabla.put(nombre,nuevaSede);
 
         Alert alert=new Alert(Alert.AlertType.INFORMATION);

@@ -20,7 +20,7 @@ import static Nuevo.Zona.zon;
  * JavaFX App
  */
 public class App extends Application {
-    public static Graph<Object, DefaultEdge> grafo = new SimpleGraph<>(DefaultEdge.class);
+    public static Graph<Sede, DefaultEdge> grafo = new SimpleGraph<>(DefaultEdge.class);
     private static Scene scene;
 
     @Override
